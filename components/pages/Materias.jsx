@@ -31,8 +31,7 @@ const Materias = () => {
       onClose;
       consultarMaterias();
     });
-  };
-  
+  };  
 
   const renderItem = ({ item }) =>{
 
