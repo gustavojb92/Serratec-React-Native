@@ -96,19 +96,6 @@ const Alunos = () => {
           >
             Deletar
           </Actionsheet.Item>
-          <Actionsheet.Item
-            startIcon={
-              <Icon
-                as={MaterialIcons}
-                name="edit"
-                color="trueGray.400"
-                mr="1"
-                size="6"
-              />
-            }
-          >
-            Editar
-          </Actionsheet.Item>
         </Actionsheet.Content>
       </Actionsheet>
     </>

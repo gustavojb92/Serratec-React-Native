@@ -2,7 +2,6 @@ import "react-native-gesture-handler"
 import React, { useEffect, useState } from 'react';
 import { Image, StatusBar } from 'react-native';
 import Title from "./components/Title";
-import TextoLogin from "./components/TextoLogin";
 import { NativeBaseProvider, Text } from "native-base";
 import Menu from "./components/Menu";
 import { UsuariosProvider } from "./context/index"
@@ -23,8 +22,8 @@ export default function App() {
       <AlunoProvider>
         <MateriasProvider>
           <NativeBaseProvider>
-            {!carregando ? <Menu /> : <TextoLogin>Loading</TextoLogin>}
-            <StatusBar backgroundColor='#999999e0' />
+            {!carregando ? <Menu /> : <Title>Loading</Title>}
+            <StatusBar backgroundColor='#FFF' />
           </NativeBaseProvider >
         </MateriasProvider >
       </AlunoProvider >
