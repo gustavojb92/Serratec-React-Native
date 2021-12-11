@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import { UsuariosProvider } from "./context/index"
 import { AlunoProvider } from "./context/AlunoContext"
 import { MateriasProvider } from "./context/MateriasContext"
+import Container from "./components/Container"
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
       <AlunoProvider>
         <MateriasProvider>
           <NativeBaseProvider>
-            {!carregando ? <Menu /> : <Title>Loading</Title>}
+            {!carregando ? <Menu /> : <Container><Title>Loading</Title></Container>}
             <StatusBar backgroundColor='#FFF' />
           </NativeBaseProvider >
         </MateriasProvider >

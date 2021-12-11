@@ -9,7 +9,7 @@ const UsuariosProvider = ({children}) => {
     useEffect(() => {
         AsyncStorage.getItem('@usuario').then(login =>{
             const usuarioObj = login ? JSON.parse(login) : undefined;
-        setUsuarios(usuarioObj);
+            setUsuarios(usuarioObj);
         });
     },[])
 
